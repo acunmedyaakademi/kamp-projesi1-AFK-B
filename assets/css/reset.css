@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,21 +17,35 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: "Manrope", serif;
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -35,13 +53,141 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 32px 24px;
+  .navbar {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  label {
+    display: flex;
+    cursor: pointer;
+    input {
+      appearance: none;
+    }
+  }
+}
+
+.hamburger-menu-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  margin-top: 32px;
+  border: none;
+  padding: 0;
+}
+
+.categories {
+  padding: 82px 24px 32px 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 68px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.category-item {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 22px;
+  > img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+    color: #000;
+    span {
+      opacity: 0.5;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+  h3 {
+    font-size: 15px;
+    line-height: 20.49px;
+    letter-spacing: 1.07px;
+  }
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  background-color: #000;
+  padding: 0 24px 40px 24px;
+  gap: 48px;
+  .navbar {
+    color: #fff;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 16px;
+      text-align: center;
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    opacity: 0.5;
+    text-align: center;
+  }
+  hr{
+    width: 100px;
+    margin-inline: auto;
+    border: 2px solid #D87D4A;
+  }
+}
+
+.social-media{
+  display: flex;
+  gap: 16px;
 }

@@ -11,3 +11,14 @@ if (localStorage.data) {
 } else {
   data = await getData();
 }
+
+const hamburgerMenu = document.querySelector(".hamburgerMenuInput");
+const hamburgerMenuDialog = document.querySelector(".hamburger-menu-container");
+
+hamburgerMenu.addEventListener("change", (e) => {
+  if (e.target.checked) {
+    hamburgerMenuDialog.open = true;
+  } else {
+    hamburgerMenuDialog.open = false;
+  }
+});
