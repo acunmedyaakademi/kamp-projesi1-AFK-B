@@ -18,7 +18,9 @@ const hamburgerMenuDialog = document.querySelector(".hamburger-menu-container");
 hamburgerMenu.addEventListener("change", (e) => {
   if (e.target.checked) {
     hamburgerMenuDialog.open = true;
+    document.body.style = "overflow: hidden";
   } else {
     hamburgerMenuDialog.open = false;
+    document.body.style = "overflow: auto";
   }
 });
