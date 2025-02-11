@@ -227,3 +227,60 @@ h6 {
 .mark-orange {
   color: #d87d4a;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 122px 40px;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 120px;
+  }
+
+  .main-content {
+    margin-top: 120px;
+    gap: 64px;
+    img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .content-text {
+    padding-inline: 80px;
+    h3 {
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: 1.43px;
+    }
+  }
+
+  .footer {
+    justify-items: start;
+    padding-inline: 40px;
+    grid-template-columns: repeat(2, auto);
+    hr {
+      grid-column: 1 / -1;
+      margin-inline: inherit;
+    }
+    .navbar {
+      grid-column: 1 / -1;
+      ul {
+        display: flex;
+        gap: 34px;
+      }
+    }
+    p:not(:nth-child(5)){
+      grid-column: 1 / -1;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+  }
+
+  .social-media{
+    margin-left: auto;
+  }
+}
