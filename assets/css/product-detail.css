@@ -135,6 +135,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;
   gap: 22px;
+  align-items: stretch;
   img {
     object-fit: cover;
     border-radius: 8px;
@@ -219,7 +220,7 @@
 
   .product-detail-images {
     margin-top: 120px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: repeat(2, 1fr);
     img {
       &:last-child {
@@ -260,5 +261,19 @@
       gap: 10px;
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-features{
+    grid-template-columns: 2fr 1fr
+  }
+
+  .product-in-the-box{
+    grid-template-columns: 1fr;
+  }
+  
+  .product-features-header{
+    grid-auto-rows: max-content;
   }
 }
