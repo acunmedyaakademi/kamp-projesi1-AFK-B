@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Detail</title>
     <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/product-detail.css" />
     <script type="module" src="/assets/js/product-detail.js" defer></script>
   </head>
   <body>
@@ -49,70 +50,91 @@
       <div class="product-detail">
         <a href="#">Go Back</a>
         <div class="product-detail-item">
-          <img src="" alt="Product Img" />
+          <img src="/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg" alt="Product Img" />
           <div class="product-detail-text">
-            <h4>New Product</h4>
+            <h4>NEW PRODUCT</h4>
             <h3>XX99 Mark II Headphones</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nulla.</p>
+            <p>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
             <h3>$ 2,999</h3>
-            <p>- 1 +</p>
-            <a href="#">Add to cart</a>
+            <div class="product-detail-count-content">
+              <div class="product-detail-count">
+                <button class="product-detail-countDec">-</button>
+                <span>1</span>
+                <button class="product-detail-countInc">+</button>
+              </div>
+              <button class="add-cartBtn">Add to cart</button>
+            </div>
           </div>
         </div>
         <div class="product-features">
-          <h2>Features</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet.</p>
-          <h2>In the box</h2>
-          <p>1x Headphone Unit</p>
-          <p>2x Replacement Earcups</p>
-          <p>1x User Manual</p>
-          <p>1x 3.5mm 5m Audio Cable</p>
-          <p>1x Travel Bag</p>
+          <div class="product-features-header">
+            <h2>FEATURES</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet.</p>
+          </div>
+          <div class="product-in-the-box">
+            <h2>IN THE BOX</h2>
+            <div class="product-box-items-content">
+              <div class="product-box-item">
+                <span class="product-box-item-count">1x</span>
+                <span class="product-box-item-name">Headphone Unit</span>
+              </div>
+              <div class="product-box-item">
+                <span class="product-box-item-count">1x</span>
+                <span class="product-box-item-name">Headphone Unit</span>
+              </div>
+              <div class="product-box-item">
+                <span class="product-box-item-count">1x</span>
+                <span class="product-box-item-name">Headphone Unit</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="product-detail-images">
-          <img src="" alt="1x" />
-          <img src="" alt="1x" />
-          <img src="" alt="2x" />
+          <img src="/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg" alt="1x" />
+          <img src="/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg" alt="1x" />
+          <img src="/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg" alt="2x" />
         </div>
         <div class="product-also-like">
+          <h2>YOU MAY ALSO LIKE</h2>
           <div class="product-also-like-item">
-            <img src="" alt="" />
+            <figure><img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" /></figure>
             <h3>XX99 Mark I</h3>
             <a href="#">See Product</a>
           </div>
           <div class="product-also-like-item">
-            <img src="" alt="" />
+            <figure><img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" /></figure>
             <h3>XX99 Mark I</h3>
             <a href="#">See Product</a>
           </div>
           <div class="product-also-like-item">
-            <img src="" alt="" />
+            <figure><img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" /></figure>
             <h3>XX99 Mark I</h3>
-            <a href="#">See Product</a>
+            <a href="#">SEE PRODUCT</a>
           </div>
         </div>
       </div>
       <div class="categories">
         <div class="category-item">
-          <img src="" alt="Headphones Img" />
-          <h3>Headphones</h3>
-          <a href="#">Shop</a>
+          <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Headphones Img" />
+          <h3>HEADPHONES</h3>
+          <a href="/assets/pages/category.html#Headphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
         </div>
         <div class="category-item">
-          <img src="" alt="Speakers Img" />
-          <h3>Speakers</h3>
-          <a href="#">Shop</a>
+          <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Speakers Img" />
+          <h3>SPEAKERS</h3>
+          <a href="/assets/pages/category.html#Speakers"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
         </div>
         <div class="category-item">
-          <img src="" alt="Earphones Img" />
-          <h3>Earphones</h3>
-          <a href="#">Shop</a>
+          <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Earphones Img" />
+          <h3>EARPHONES</h3>
+          <a href="/assets/pages/category.html#Earphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
         </div>
       </div>
       <div class="main-content">
+        <img src="/assets/shared/desktop/image-best-gear.jpg" alt="" />
         <div class="content-text">
-          <h3>Başlık</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, labore.</p>
+          <h3>BRINGING YOU THE <span class="mark-orange">BEST</span> AUDIO GEAR</h3>
+          <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
         </div>
         <img src="" alt="" />
       </div>

@@ -85,7 +85,7 @@ h6 {
   }
 }
 
-.container{
+.container {
   padding: 106px 24px;
 }
 
@@ -196,4 +196,34 @@ h6 {
 .social-media {
   display: flex;
   gap: 16px;
+}
+
+.main-content {
+  margin-top: 120px;
+  display: grid;
+  gap: 40px;
+  img {
+    border-radius: 12px;
+  }
+}
+
+.content-text {
+  display: grid;
+  gap: 32px;
+  text-align: center;
+  h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #00000080;
+  }
+}
+
+.mark-orange {
+  color: #d87d4a;
 }
