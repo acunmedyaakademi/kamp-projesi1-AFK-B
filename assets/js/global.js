@@ -24,3 +24,16 @@ hamburgerMenu.addEventListener("change", (e) => {
     document.body.style = "overflow: auto";
   }
 });
+
+const cartInput = document.querySelector(".cartInput");
+const cartDialog = document.querySelector(".cart-dialog");
+
+cartInput.addEventListener("change", (e) => {
+  if (e.target.checked) {
+    cartDialog.open = true;
+    document.body.style = "overflow: hidden";
+  } else {
+    cartDialog.open = false;
+    document.body.style = "overflow: auto";
+  }
+});
