@@ -156,6 +156,11 @@ input[type="number"] {
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.5);
   }
+
+  img {
+    max-width: 64px;
+    border-radius: 8px;
+  }
 }
 
 .pay-details {
@@ -216,6 +221,7 @@ input[type="number"] {
   display: block;
   padding-block: 15px;
   text-decoration: none;
+  border: none;
 }
 
 .payment-detailss h3 {
@@ -244,8 +250,8 @@ input[type="number"] {
   display: block;
 }
 
-dialog {
-  margin: auto 24px;
+.order-confirmation-dialog {
+  margin: auto;
   border: none;
   background: #ffffff;
   border-radius: 8px;
@@ -266,6 +272,10 @@ dialog {
     line-height: 25px;
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.5);
+  }
+
+  img {
+    max-width: 64px;
   }
 }
 
@@ -352,6 +362,7 @@ dialog {
   padding-block: 15px;
   text-decoration: none;
   margin-top: 23px;
+  border: none;
 }
 
 /* tablet  */
@@ -417,7 +428,7 @@ dialog {
     padding-inline: 48px;
   }
 
-  .product-detail {
+  .product-detail form {
     display: grid;
     grid-template-columns: 1fr 350px;
     align-items: flex-start;
@@ -437,7 +448,5 @@ dialog {
     }
   }
 
-  .mobil {
-    display: none !important;
-  }
+  
 }
