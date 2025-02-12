@@ -1,183 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout Page</title>
-  <link rel="stylesheet" href="/assets/css/reset.css" />
-  <link rel="stylesheet" href="/assets/css/checkout.css" />
-  <script type="module" src="/assets/js/checkout.js" defer></script>
-</head>
-<body>
-  <div class="container-checkout">
-    <div class="header">
-      <div class="hamburger-menu">
-        <label>
-          <input type="checkbox" class="hamburgerMenuInput" />
-          <img src="/assets/shared/mobile/hamburger-icon.svg" alt="Hamburger Menu" />
-        </label>
-        <dialog class="hamburger-menu-container">
-          <div class="categories">
-            <div class="category-item">
-              <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Headphones Img" />
-              <h3>HEADPHONES</h3>
-              <a href="/assets/pages/category.html#Headphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
-            </div>
-            <div class="category-item">
-              <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Speakers Img" />
-              <h3>SPEAKERS</h3>
-              <a href="/assets/pages/category.html#Speakers"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
-            </div>
-            <div class="category-item">
-              <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Earphones Img" />
-              <h3>EARPHONES</h3>
-              <a href="/assets/pages/category.html#Earphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
-            </div>
-          </div>
-        </dialog>
-      </div>
-      <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo" /></a>
-      <div class="navbar">
-        <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
-        </ul>
-      </div>
-      <img src="/assets/shared/desktop/icon-cart.svg" alt="Basket Icon" />
-    </div>
-    <div class="product-detail">
-      <div class="section-checkout">
-        <a href="#" class="go-back">Go Back</a>
-        <h2>Checkout</h2>
-        <h4>Billing details</h4>
-        <div class="billing-details">
-          <label for="">Name
-            <input type="text" placeholder="Alexei Ward">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/checkout.css" />
+    <script type="module" src="/assets/js/checkout.js" defer></script>
+  </head>
+  <body>
+    <div class="container-checkout">
+      <div class="header">
+        <div class="hamburger-menu">
+          <label>
+            <input type="checkbox" class="hamburgerMenuInput" />
+            <img src="/assets/shared/mobile/hamburger-icon.svg" alt="Hamburger Menu" />
           </label>
-          <label for="">Email Address<input type="email" placeholder="alexei@mail.com"></label>
-          <label for="">Phone Number<input type="number" placeholder="+1 202-555-0136"></label>
-        </div>
-        <h4>shipping info</h4>
-        <div class="shipping-info">
-         <label for="">Your Address<input type="text" placeholder="1137 Williams Avenue"></label>
-         <dialog open>
-          <img src="/assets/checkout/icon-order-confirmation.svg" alt="">
-          <h2>THANK YOU FOR YOUR ORDER</h2>
-          <h6>You will receive an email confirmation shortly.</h6>
-          <div class="dialog-content">
-            <div class="dialog-product">
-                <div class="dialog-item">
-                  <div class="dialog-product-detail">
-                      <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
-                        <div>
-                          <h3>XX99 MK II</h3>
-                          <p>$2,999</p>
-                      </div>
-                  </div>
-                  <p>x1</p>
+          <dialog class="hamburger-menu-container">
+            <div class="categories">
+              <div class="category-item">
+                <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Headphones Img" />
+                <h3>HEADPHONES</h3>
+                <a href="/assets/pages/category.html#Headphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
               </div>
-              <h3>and 2 other item(s)</h3>
+              <div class="category-item">
+                <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Speakers Img" />
+                <h3>SPEAKERS</h3>
+                <a href="/assets/pages/category.html#Speakers"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
+              </div>
+              <div class="category-item">
+                <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="Earphones Img" />
+                <h3>EARPHONES</h3>
+                <a href="/assets/pages/category.html#Earphones"><span>SHOP</span> <img src="/assets/shared/mobile/right-arrow.svg" alt="Right Arrow" /></a>
+              </div>
             </div>
-            <div class="dialog-pay-details">
-              <p>Grand Total</p>
-              <h6>$5,300</h6>
+          </dialog>
+        </div>
+        <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo" /></a>
+        <div class="navbar">
+          <ul>
+            <li><a href="7">HOME</a></li>
+            <li><a href="/category#Headphones">HEADPHONES</a></li>
+            <li><a href="/category#Speakers">SPEAKERS</a></li>
+            <li><a href="/category#Earphones">EARPHONES</a></li>
+          </ul>
+        </div>
+        <label>
+          <input type="checkbox" class="cartInput" />
+          <img src="/assets/shared/desktop/icon-cart.svg" alt="Basket Icon" />
+          <dialog class="cart-dialog">
+            <div class="cart-container">
+              <div class="cart-header">
+                <h2>CART (2)</h2>
+                <button>Remove all</button>
+              </div>
+              <div class="cart-item-list">
+                <div class="cart-item">
+                  <figure>
+                    <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" />
+                  </figure>
+                  <div class="cart-item-metadata">
+                    <h3>XX99 MK II</h3>
+                    <p>$ 2,999</p>
+                  </div>
+                  <div class="cart-item-count">
+                    <button class="cart-item-countDec">-</button>
+                    <span>1</span>
+                    <button class="cart-item-countInc">+</button>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <figure>
+                    <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" />
+                  </figure>
+                  <div class="cart-item-metadata">
+                    <h3>XX99 MK II</h3>
+                    <p>$ 2,999</p>
+                  </div>
+                  <div class="cart-item-count">
+                    <button class="cart-item-countDec">-</button>
+                    <span>1</span>
+                    <button class="cart-item-countInc">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-total-content">
+                <span>TOTAL</span>
+                <h3 class="cart-total">$ 5,396</h3>
+              </div>
+              <button class="cart-checkoutBtn">CHECKOUT</button>
             </div>
-        </div>
-          <a href="" class="return-home-btn">Back to Home</a>
-       </dialog>
-         <label for="">Zip Code<input type="number" placeholder="10001"></label> 
-         <label for="">City<input type="text" placeholder="New York"></label>
-         <label for="">Country<input type="text" placeholder="United States"></label>
-        </div>
-        
-        <h4>Payment Method</h4>
-       <div class="payment-details">
-         <h3>Payment Method</h3>
-        <div>
-          <div class="payment-method">
-          <label><input type="radio"  name="payment-details"  >
-           <span class="custom-radio"></span>
-           e-Money
-          </label>
-        </div>
-        <div class="payment-method">
-        <label><input type="radio" name="payment-details" >
-            <span class="custom-radio"></span>
-            Cash on Delivery
-          </label>
-        </div>
+          </dialog>
+        </label>
       </div>
-          
-          <label for="" class="mobil">e-Money Number<input type="number" placeholder="238521993"></label>
-          <label for="" class="mobil">e-Money Pin<input type="number" placeholder="6891"></label>
-          
-        </div>
-        <div class="desktop">
-          <img src="/assets/checkout/icon-cash-on-delivery.svg" alt="">
-          <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
-        </div>
-      </div>
-      <div class="checkout-summary">
-        <h2>SUMMARY</h2>
-        <div class="checkout-item">
-          <div class="checkout-product-detail">
-            <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
+      <div class="product-detail">
+        <div class="section-checkout">
+          <a href="#" class="go-back">Go Back</a>
+          <h2>Checkout</h2>
+          <h4>Billing details</h4>
+          <div class="billing-details">
+            <label for=""
+              >Name
+              <input type="text" placeholder="Alexei Ward" />
+            </label>
+            <label for="">Email Address<input type="email" placeholder="alexei@mail.com" /></label>
+            <label for="">Phone Number<input type="number" placeholder="+1 202-555-0136" /></label>
+          </div>
+          <h4>shipping info</h4>
+          <div class="shipping-info">
+            <label for="">Your Address<input type="text" placeholder="1137 Williams Avenue" /></label>
+            <dialog>
+              <img src="/assets/checkout/icon-order-confirmation.svg" alt="" />
+              <h2>THANK YOU FOR YOUR ORDER</h2>
+              <h6>You will receive an email confirmation shortly.</h6>
+              <div class="dialog-content">
+                <div class="dialog-product">
+                  <div class="dialog-item">
+                    <div class="dialog-product-detail">
+                      <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="" />
+                      <div>
+                        <h3>XX99 MK II</h3>
+                        <p>$2,999</p>
+                      </div>
+                    </div>
+                    <p>x1</p>
+                  </div>
+                  <h3>and 2 other item(s)</h3>
+                </div>
+                <div class="dialog-pay-details">
+                  <p>Grand Total</p>
+                  <h6>$5,300</h6>
+                </div>
+              </div>
+              <a href="" class="return-home-btn">Back to Home</a>
+            </dialog>
+            <label for="">Zip Code<input type="number" placeholder="10001" /></label>
+            <label for="">City<input type="text" placeholder="New York" /></label>
+            <label for="">Country<input type="text" placeholder="United States" /></label>
+          </div>
+
+          <h4>Payment Method</h4>
+          <div class="payment-details">
+            <h3>Payment Method</h3>
             <div>
-            <h3>XX99 MK II</h3>  
-            <p>$ 2,999</p>
+              <div class="payment-method">
+                <label
+                  ><input type="radio" name="payment-details" />
+                  <span class="custom-radio"></span>
+                  e-Money
+                </label>
+              </div>
+              <div class="payment-method">
+                <label
+                  ><input type="radio" name="payment-details" />
+                  <span class="custom-radio"></span>
+                  Cash on Delivery
+                </label>
+              </div>
+            </div>
+
+            <label for="" class="mobil">e-Money Number<input type="number" placeholder="238521993" /></label>
+            <label for="" class="mobil">e-Money Pin<input type="number" placeholder="6891" /></label>
           </div>
+          <div class="desktop">
+            <img src="/assets/checkout/icon-cash-on-delivery.svg" alt="" />
+            <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
           </div>
-          <p>x1</p>
         </div>
-        <div class="checkout-item">
-          <div class="checkout-product-detail">
-            <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
-            <div>
-            <h3>XX99 MK II</h3>  
-            <p>$ 2,999</p>
+        <div class="checkout-summary">
+          <h2>SUMMARY</h2>
+          <div class="checkout-item">
+            <div class="checkout-product-detail">
+              <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="" />
+              <div>
+                <h3>XX99 MK II</h3>
+                <p>$ 2,999</p>
+              </div>
+            </div>
+            <p>x1</p>
           </div>
+          <div class="checkout-item">
+            <div class="checkout-product-detail">
+              <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="" />
+              <div>
+                <h3>XX99 MK II</h3>
+                <p>$ 2,999</p>
+              </div>
+            </div>
+            <p>x1</p>
           </div>
-          <p>x1</p>
+          <div class="pay-details">
+            <p>Total</p>
+            <h6>$5,300</h6>
+          </div>
+          <div class="pay-details">
+            <p>Shipping</p>
+            <h6>$5,300</h6>
+          </div>
+          <div class="pay-details">
+            <p>VAT (included)</p>
+            <h6>$5,300</h6>
+          </div>
+          <div class="grand-total">
+            <p>Grand Total</p>
+            <h6>$5,300</h6>
+          </div>
+          <a href="#" class="btn">Continue & Pay</a>
         </div>
-        <div class="pay-details">
-          <p>Total  </p> 
-           <h6>$5,300</h6>
-        </div>
-        <div class="pay-details">
-         <p>Shipping  </p>
-         <h6>$5,300</h6>
-        </div>
-       <div class="pay-details">
-         <p>VAT (included)  </p>
-         <h6>$5,300</h6>
-       </div>
-       <div class="grand-total">
-        <p>Grand Total  </p>
-        <h6>$5,300</h6>
-       </div>
-        <a href="#" class="btn">Continue & Pay</a>
-        
       </div>
-    </div>
-    <div class="footer">
-      <hr />
-      <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo" /></a>
-      <div class="navbar">
-        <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/assets/pages/category.html#Headphones">HEADPHONES</a></li>
-          <li><a href="/assets/pages/category.html#Speakers">SPEAKERS</a></li>
-          <li><a href="/assets/pages/category.html#Earphones">EARPHONES</a></li>
-        </ul>
-      </div>
-      <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
-      <p>Copyright 2021. All Rights Reserved</p>
-      <div class="social-media">
-        <a href="#"><img src="/assets/shared/mobile/facebook.svg" alt="facebook icon" /></a>
-        <a href="#"><img src="/assets/shared/mobile/twitter.svg" alt="twitter icon" /></a>
-        <a href="#"><img src="/assets/shared/mobile/instagram.svg" alt="instagram icon" /></a>
+      <div class="footer">
+        <hr />
+        <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo" /></a>
+        <div class="navbar">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/assets/pages/category.html#Headphones">HEADPHONES</a></li>
+            <li><a href="/assets/pages/category.html#Speakers">SPEAKERS</a></li>
+            <li><a href="/assets/pages/category.html#Earphones">EARPHONES</a></li>
+          </ul>
+        </div>
+        <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+        <p>Copyright 2021. All Rights Reserved</p>
+        <div class="social-media">
+          <a href="#"><img src="/assets/shared/mobile/facebook.svg" alt="facebook icon" /></a>
+          <a href="#"><img src="/assets/shared/mobile/twitter.svg" alt="twitter icon" /></a>
+          <a href="#"><img src="/assets/shared/mobile/instagram.svg" alt="instagram icon" /></a>
+        </div>
       </div>
     </div>
   </body>

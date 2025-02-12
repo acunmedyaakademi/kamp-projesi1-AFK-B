@@ -198,7 +198,7 @@
     letter-spacing: 1.29px;
   }
 
-  .product-features{
+  .product-features {
     margin-top: 120px;
     gap: 120px;
   }
@@ -265,15 +265,15 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .product-features{
-    grid-template-columns: 2fr 1fr
+  .product-features {
+    grid-template-columns: 2fr 1fr;
   }
 
-  .product-in-the-box{
+  .product-in-the-box {
     grid-template-columns: 1fr;
   }
-  
-  .product-features-header{
+
+  .product-features-header {
     grid-auto-rows: max-content;
   }
 }
