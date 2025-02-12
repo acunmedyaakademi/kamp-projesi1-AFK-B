@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category</title>
     <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/category.css">
+    <link rel="stylesheet" href="/assets/css/category.css" />
     <script type="module" src="/assets/js/category.js" defer></script>
   </head>
   <body>
@@ -38,13 +38,59 @@
       <a href="/"><img src="/assets/shared/desktop/logo.svg" alt="Company Logo" /></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <li><a href="7">HOME</a></li>
+          <li><a href="/category#Headphones">HEADPHONES</a></li>
+          <li><a href="/category#Speakers">SPEAKERS</a></li>
+          <li><a href="/category#Earphones">EARPHONES</a></li>
         </ul>
       </div>
-      <img src="/assets/shared/desktop/icon-cart.svg" alt="Basket Icon" />
+      <label>
+        <input type="checkbox" class="cartInput" />
+        <img src="/assets/shared/desktop/icon-cart.svg" alt="Basket Icon" />
+        <dialog class="cart-dialog">
+          <div class="cart-container">
+            <div class="cart-header">
+              <h2>CART (2)</h2>
+              <button>Remove all</button>
+            </div>
+            <div class="cart-item-list">
+              <div class="cart-item">
+                <figure>
+                  <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" />
+                </figure>
+                <div class="cart-item-metadata">
+                  <h3>XX99 MK II</h3>
+                  <p>$ 2,999</p>
+                </div>
+                <div class="cart-item-count">
+                  <button class="cart-item-countDec">-</button>
+                  <span>1</span>
+                  <button class="cart-item-countInc">+</button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <figure>
+                  <img src="/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.png" alt="" />
+                </figure>
+                <div class="cart-item-metadata">
+                  <h3>XX99 MK II</h3>
+                  <p>$ 2,999</p>
+                </div>
+                <div class="cart-item-count">
+                  <button class="cart-item-countDec">-</button>
+                  <span>1</span>
+                  <button class="cart-item-countInc">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="cart-total-content">
+              <span>TOTAL</span>
+              <h3 class="cart-total">$ 5,396</h3>
+            </div>
+            <button class="cart-checkoutBtn">CHECKOUT</button>
+          </div>
+        </dialog>
+      </label>
     </div>
     <div class="category-title">
       <h1>HEADPHONES</h1>
@@ -53,7 +99,7 @@
       <div class="product-headphones">
         <div class="product-headphones-item">
           <img class="product-img-mobile" src="\assets\product-xx99-mark-two-headphones\mobile\image-category-page-preview.jpg" alt="headphone" />
-          <img class="product-img-tablet" src="\assets\product-xx99-mark-two-headphones\tablet\image-category-page-preview.jpg" alt="headphone">
+          <img class="product-img-tablet" src="\assets\product-xx99-mark-two-headphones\tablet\image-category-page-preview.jpg" alt="headphone" />
           <div class="product-headphones-text">
             <h4>NEW PRODUCT</h4>
             <h3>XX99 MARK II HEADPHONES</h3>
@@ -81,7 +127,7 @@
       </div>
       <div class="main-content">
         <img class="img-mobile" src="\assets\shared\mobile\image-best-gear.jpg" alt="model" />
-        <img class="img-tablet" src="\assets\shared\tablet\image-best-gear.jpg" alt="">
+        <img class="img-tablet" src="\assets\shared\tablet\image-best-gear.jpg" alt="" />
         <div class="content-text">
           <h3>BRINGING YOU THE <span>BEST</span> AUDIO GEAR</h3>
           <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
