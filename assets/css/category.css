@@ -21,6 +21,8 @@
 
 .product-headphones {
   margin-bottom: 120px;
+  display: grid;
+  gap: 120px;
 }
 
 .product-headphones-item {
@@ -30,6 +32,7 @@
 
 .product-img-mobile {
   margin-bottom: 32px;
+  max-width: 540px;
 }
 
 .product-img-tablet {
@@ -166,6 +169,14 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .product-headphones{
+    gap: 160px;
+  }
+
+  .product-headphones .product-headphones-item:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
   .product-headphones-item {
     justify-content: center;
     align-items: center;
@@ -188,6 +199,14 @@
     line-height: 44px;
     letter-spacing: 1.43px;
   }
+
+  .product-headphones-text {
+    align-items: flex-start;
+    *{
+      text-align: left !important;
+    }
+  }
+
   .categories {
     flex-direction: row;
     gap: 30px;
