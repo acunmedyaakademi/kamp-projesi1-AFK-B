@@ -159,13 +159,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  figure {
-    background-color: #f1f1f1;
-    padding: 12px;
+  img{
+    max-width: 64px;
     border-radius: 8px;
-    img {
-      max-width: 36px;
-    }
   }
 }
 
@@ -351,7 +347,7 @@ button {
     justify-content: flex-start;
     gap: 42px;
     padding: 32px 40px;
-    > label:last-child {
+    > label {
       margin-left: auto;
     }
   }
@@ -448,7 +444,7 @@ button {
         }
       }
     }
-    > label:last-child {
+    > label {
       margin-left: inherit;
     }
   }
