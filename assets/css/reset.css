@@ -111,6 +111,9 @@ button {
   margin-top: 32px;
   border: none;
   padding: 0;
+  .categories{
+    padding-inline: 24px;
+  }
 }
 
 .cart-dialog {
