@@ -11,13 +11,6 @@
   margin-top: 24px;
   display: grid;
   gap: 32px;
-  figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-  }
 }
 
 .product-detail-text {
@@ -139,6 +132,7 @@
   img {
     object-fit: cover;
     border-radius: 8px;
+    width: 100%;
   }
 }
 
@@ -159,14 +153,10 @@
 .product-also-like-item {
   display: grid;
   gap: 32px;
-
-  figure {
-    background-color: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+  img{
+    max-width: 350px;
     border-radius: 8px;
+    margin-inline: auto;
   }
 
   a {
@@ -186,9 +176,6 @@
   .product-detail-item {
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
-    figure {
-      min-height: 480px;
-    }
     align-items: center;
   }
 
@@ -244,8 +231,8 @@
   }
 
   .product-also-like-item {
-    figure {
-      min-height: 320px;
+    img{
+      max-width: 220px;
     }
     h3 {
       font-size: 24px;
