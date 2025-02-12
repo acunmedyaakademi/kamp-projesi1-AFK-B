@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Page</title>
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <script type="module" src="/assets/js/checkout.js" defer></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/checkout.css" />
+  <script type="module" src="/assets/js/checkout.js" defer></script>
+</head>
+<body>
+  <div class="container-checkout">
     <div class="header">
       <div class="hamburger-menu">
         <label>
@@ -45,54 +47,118 @@
       </div>
       <img src="/assets/shared/desktop/icon-cart.svg" alt="Basket Icon" />
     </div>
-    <div class="container">
-      <div class="product-detail">
-        <a href="#">Go Back</a>
-        <div class="section-checkout">
-          <h2>Checkout</h2>
-          <div class="billing-details">
-            <h3>Name</h3>
-            <input type="text" />
-            <h3>Email Address</h3>
-            <input type="email" />
-            <h3>Phone Number</h3>
-            <input type="number" />
-          </div>
-          <div class="shipping-info">
-            <h3>Address</h3>
-            <input type="text" />
-            <h3>Zip Code</h3>
-            <input type="number" />
-            <h3>City</h3>
-            <input type="text" />
-            <h3>Country</h3>
-            <input type="text" />
-          </div>
-          <div class="payment-details">
-            <h3>Payment Method</h3>
-            <label><input type="checkbox" name="" id="" />e-Money</label>
-            <label><input type="checkbox" name="" id="" />Cash on Delivery</label>
-            <h3>e-Money Number</h3>
-            <input type="number" />
-            <h3>e-Money Pin</h3>
-            <input type="number" />
-          </div>
+    <div class="product-detail">
+      <div class="section-checkout">
+        <a href="#" class="go-back">Go Back</a>
+        <h2>Checkout</h2>
+        <h4>Billing details</h4>
+        <div class="billing-details">
+          <label for="">Name
+            <input type="text" placeholder="Alexei Ward">
+          </label>
+          <label for="">Email Address<input type="email" placeholder="alexei@mail.com"></label>
+          <label for="">Phone Number<input type="number" placeholder="+1 202-555-0136"></label>
         </div>
-        <div class="checkout-summary">
-          <div class="checkout-item">
-            <img src="" alt="" />
-            <div class="checkout-product-detail">
-              <h3>XX99 MK II</h3>
-              <p>$ 2,999</p>
+        <h4>shipping info</h4>
+        <div class="shipping-info">
+         <label for="">Your Address<input type="text" placeholder="1137 Williams Avenue"></label>
+         <dialog open>
+          <img src="/assets/checkout/icon-order-confirmation.svg" alt="">
+          <h2>THANK YOU FOR YOUR ORDER</h2>
+          <h6>You will receive an email confirmation shortly.</h6>
+          <div class="dialog-content">
+            <div class="dialog-product">
+                <div class="dialog-item">
+                  <div class="dialog-product-detail">
+                      <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
+                        <div>
+                          <h3>XX99 MK II</h3>
+                          <p>$2,999</p>
+                      </div>
+                  </div>
+                  <p>x1</p>
+              </div>
+              <h3>and 2 other item(s)</h3>
             </div>
-            <p>x1</p>
-          </div>
-          <p>Total :</p>
-          <p>Shipping :</p>
-          <p>VAT (included) :</p>
-          <p>Grand Total :</p>
-          <a href="#">Continue & Pay</a>
+            <div class="dialog-pay-details">
+              <p>Grand Total</p>
+              <h6>$5,300</h6>
+            </div>
         </div>
+          <a href="" class="return-home-btn">Back to Home</a>
+       </dialog>
+         <label for="">Zip Code<input type="number" placeholder="10001"></label> 
+         <label for="">City<input type="text" placeholder="New York"></label>
+         <label for="">Country<input type="text" placeholder="United States"></label>
+        </div>
+        
+        <h4>Payment Method</h4>
+       <div class="payment-details">
+         <h3>Payment Method</h3>
+        <div>
+          <div class="payment-method">
+          <label><input type="radio"  name="payment-details"  >
+           <span class="custom-radio"></span>
+           e-Money
+          </label>
+        </div>
+        <div class="payment-method">
+        <label><input type="radio" name="payment-details" >
+            <span class="custom-radio"></span>
+            Cash on Delivery
+          </label>
+        </div>
+      </div>
+          
+          <label for="" class="mobil">e-Money Number<input type="number" placeholder="238521993"></label>
+          <label for="" class="mobil">e-Money Pin<input type="number" placeholder="6891"></label>
+          
+        </div>
+        <div class="desktop">
+          <img src="/assets/checkout/icon-cash-on-delivery.svg" alt="">
+          <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+        </div>
+      </div>
+      <div class="checkout-summary">
+        <h2>SUMMARY</h2>
+        <div class="checkout-item">
+          <div class="checkout-product-detail">
+            <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
+            <div>
+            <h3>XX99 MK II</h3>  
+            <p>$ 2,999</p>
+          </div>
+          </div>
+          <p>x1</p>
+        </div>
+        <div class="checkout-item">
+          <div class="checkout-product-detail">
+            <img src="/assets/product-xx99-mark-two-headphones/mobile/Group 22 (1).png" alt="">
+            <div>
+            <h3>XX99 MK II</h3>  
+            <p>$ 2,999</p>
+          </div>
+          </div>
+          <p>x1</p>
+        </div>
+        <div class="pay-details">
+          <p>Total  </p> 
+           <h6>$5,300</h6>
+        </div>
+        <div class="pay-details">
+         <p>Shipping  </p>
+         <h6>$5,300</h6>
+        </div>
+       <div class="pay-details">
+         <p>VAT (included)  </p>
+         <h6>$5,300</h6>
+       </div>
+       <div class="grand-total">
+        <p>Grand Total  </p>
+        <h6>$5,300</h6>
+       </div>
+        <a href="#" class="btn">Continue & Pay</a>
+        
       </div>
     </div>
     <div class="footer">
