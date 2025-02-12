@@ -1,24 +1,26 @@
-.container-checkout {
-  padding: 24px;
-  
+body {
+  background-color: #fafafa !important;
 }
 
-.go-back{
+.container-checkout {
+  padding: 24px;
+}
+
+.go-back {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0px;
-  color: rgba(0, 0, 0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
 .section-checkout {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 24px;
-  
 }
 
 .section-checkout h2 {
@@ -27,7 +29,6 @@
   line-height: 38.25px;
   letter-spacing: 1px;
   color: #000000;
-
 }
 
 .section-checkout h4 {
@@ -35,15 +36,16 @@
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 0.93px;
-  color: #D87D4A;
+  color: #d87d4a;
   text-transform: uppercase;
   margin-bottom: 16px;
-
 }
 
-.section-checkout input[type = 'text'], input[type = 'email'], input[type = 'number'] {
-  border: 1px solid #CFCFCF;
-  color: #FFFFFF;
+.section-checkout input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border: 1px solid #cfcfcf;
+  color: #ffffff;
   border-radius: 8px;
   border-width: 1px;
   margin-top: 9px;
@@ -53,10 +55,9 @@
   border-radius: 8px;
   font-size: 14px;
   color: #000;
-
 }
 
- .section-checkout label {
+.section-checkout label {
   display: block;
   font-weight: 700;
   font-size: 12px;
@@ -64,8 +65,7 @@
   letter-spacing: -0.21px;
   color: #000000;
   margin-bottom: 24px;
-
-} 
+}
 
 .section-checkout input::placeholder {
   font-weight: 700;
@@ -73,11 +73,10 @@
   line-height: 19.12px;
   letter-spacing: -0.25px;
   color: rgb(0, 0, 0, 0.4);
-
 }
 
 .payment-details input[type="radio"] {
-  display: none; 
+  display: none;
 }
 
 .payment-details .custom-radio {
@@ -90,13 +89,11 @@
   position: relative;
 }
 
-
-
 .payment-details input[type="radio"]:checked + .custom-radio::before {
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #D87D4A;
+  background-color: #d87d4a;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -104,11 +101,10 @@
   transform: translate(-50%, -50%);
 }
 
-
-.payment-method label  {
+.payment-method label {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -119,7 +115,7 @@
 }
 
 .checkout-summary {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   padding: 24px;
   margin-block: 32px 92px;
@@ -132,13 +128,12 @@
   margin-bottom: 24px;
 
   p {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.5);
   }
-  
 }
 
 .checkout-product-detail {
@@ -147,19 +142,19 @@
   gap: 16px;
 
   h3 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #000000;
   }
 
   p {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -170,19 +165,19 @@
   margin-bottom: 8px;
 
   p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   h6 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24.59px;
-  letter-spacing: 0px;
-  color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 0px;
+    color: #000000;
   }
 }
 
@@ -192,38 +187,38 @@
   justify-content: space-between;
   margin-block: 24px 32px;
 
-p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.5);
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.5);
   }
 
-h6 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24.59px;
-  letter-spacing: 0px;
-  color: #D87D4A;
+  h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 0px;
+    color: #d87d4a;
   }
 }
 
 .product-detail .btn {
-  background: #D87D4A;
+  background: #d87d4a;
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
   letter-spacing: 1px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   display: block;
   padding-block: 15px;
   text-decoration: none;
 }
 
-.payment-detailss h3{
+.payment-detailss h3 {
   font-weight: 700;
   font-size: 12px;
   line-height: 16.39px;
@@ -245,68 +240,64 @@ h6 {
   display: none;
 }
 
-.mobil  {
+.mobil {
   display: block;
 }
 
 dialog {
   margin: auto 24px;
   border: none;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 32px;
 
   h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.86px;
-  color: #000000;
-  margin-block: 23px 16px;
-
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.86px;
+    color: #000000;
+    margin-block: 23px 16px;
   }
   h6 {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.5);
-
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
 
 .dialog-product {
-  background: #F1F1F1;
+  background: #f1f1f1;
   border-radius: 8px;
   padding: 24px;
   margin-top: 24px;
   text-align: center;
-  
-  
+
   p {
     font-weight: 700;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.5);
-    }
+  }
 
-    h3 {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16.39px;
-  letter-spacing: -0.21px;
-  color: rgb(0, 0, 0, 0.5);
-  padding-top: 12px;
-
-    }
+  h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16.39px;
+    letter-spacing: -0.21px;
+    color: rgb(0, 0, 0, 0.5);
+    padding-top: 12px;
+  }
 }
 
 .dialog-item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0 ,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 12px;
 }
 
@@ -316,15 +307,12 @@ dialog {
   gap: 16px;
 
   h3 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: #000000;
-
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #000000;
   }
-
- 
 }
 
 .dialog-pay-details {
@@ -333,33 +321,32 @@ dialog {
   border-bottom-left-radius: 8px;
   padding: 24px 15px;
   p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
-  color: rgb(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  padding-bottom: 8px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgb(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    padding-bottom: 8px;
   }
 
   h6 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24.59px;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 0px;
+    color: #ffffff;
   }
 }
 
 .return-home-btn {
-  background: #D87D4A;
+  background: #d87d4a;
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
   letter-spacing: 1px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   display: block;
   padding-block: 15px;
@@ -393,21 +380,19 @@ dialog {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-
   }
 
   .desktop {
-    display: none ;
+    display: none;
   }
 
-  .mobil  {
+  .mobil {
     display: block;
   }
 
   dialog {
     margin: auto;
     padding: 48px;
-    
   }
 
   .dialog-content {
@@ -420,9 +405,6 @@ dialog {
     margin-top: 24px;
     padding: 41px 24px;
   }
-
- 
-  
 }
 /* Desktop */
 @media (width >= 1440px) {
@@ -447,18 +429,15 @@ dialog {
     align-items: center;
     gap: 32px;
     p {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0px;
-    color: rgba(0, 0, 0, 0.5);
-
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: rgba(0, 0, 0, 0.5);
     }
   }
 
   .mobil {
     display: none !important;
   }
-
-
 }
